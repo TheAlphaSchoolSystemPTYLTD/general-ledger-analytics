@@ -88,31 +88,59 @@
 
 * **Error Response:**
 
-    `currentstatus` not supplied
+    `start_num` not supplied when `flex_code` supplied
     ```javascript
     __invalid: {
-      "currentstatus": "field is required"
+      "start_num": "field is required"
     }
     ```
 
-    `currentstatus` must be 'current' or 'future' or 'past' or 'noncurrent'
+    `start_num` not a valid integer
     ```javascript
     __invalid: {
-      "currentstatus": "Current Status must be 'current' or 'future' or 'past' or 'noncurrent'."
+      "start_num": "Value is not a valid integer."
     }
     ```
 
-    `includephoto` not a valid boolean
+    `start_num` not greater than 0
     ```javascript
     __invalid: {
-      "includephoto": "Value is not a valid boolean."
+      "start_num": "start_num must be greater than 0"
     }
     ```
 
-    `thumbnail` not a valid boolean
+    `flex_code` not supplied when `start_num` supplied
     ```javascript
     __invalid: {
-      "thumbnail": "Value is not a valid boolean."
+      "flex_code": "field is required"
+    }
+    ```
+
+    `date` not supplied
+    ```javascript
+    __invalid: {
+      "date": "field is required"
+    }
+    ```
+    
+    `date` not a valid date
+    ```javascript
+    __invalid: {
+      "date": "Value is not a valid date."
+    }
+    ```
+
+    GL Period for `date` is not Set Up
+    ```javascript
+    __invalid: {
+      "error": "GL Period for #pr_date# is not Set Up"
+    }
+    ```
+
+    `date` not within the right range
+    ```javascript
+    __invalid: {
+      "error": "Date 2018-01-01 is out of range. Date is <> CURRENT_DATE +/- 365 days"
     }
     ```
     
@@ -120,9 +148,9 @@
 
   ```javascript
     { 
-      "currentstatus":"current",
-      "includephoto":"true",
-      "thumbnail":"true"
+      "date":"04/10/2018",
+      "start_num":"1",
+      "flex_code":"02"
     }
   ```
 

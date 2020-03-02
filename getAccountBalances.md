@@ -43,7 +43,7 @@
               "period":7,
               "timestamp":"{ts '2020-03-02 15:36:25'}"
           },
-          "account_blances":[
+          "account_balances":[
               {
                   "budg4_amt":0,
                   "budg5_amt":0,
