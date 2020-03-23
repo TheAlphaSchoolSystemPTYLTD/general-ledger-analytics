@@ -1,6 +1,6 @@
 **getCOA**
 ----
-  Returns an array of structured General Ledger Account data in JSON format.
+  Returns an array of structured General Ledger Account available for this date in JSON format.
   
 * **Version History:**
 
@@ -31,7 +31,7 @@
    `flex_code [string]` - `flex_code` required if `start_num` supplied
 
    **Conditional:**
- 
+  
    none
 
 * **Success Response:**
