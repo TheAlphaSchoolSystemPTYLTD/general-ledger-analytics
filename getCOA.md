@@ -76,11 +76,12 @@
                   "group_code":"T-RI010"
               }
           },
+          "__tassversion": "01.053.3.000",
           "token":{
               "date":"2018-10-04",
               "flex_code":"02",
               "year":2018,
-              "timestamp":"{ts '2020-03-02 15:17:29'}",
+              "timestamp":"{ts '2021-01-22 15:17:29'}",
               "start_num":1
           }
       }

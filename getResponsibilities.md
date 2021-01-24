@@ -50,8 +50,9 @@
                   "given_names":"Alan Pierre"
               }
           ],
+          "__tassversion": "01.053.3.000",
           "token":{
-              "timestamp":"{ts '2020-03-02 13:57:32'}",
+              "timestamp":"{ts '2021-01-22 13:57:32'}",
               "acct_code":"00-6120-00-00"
           }
       }
