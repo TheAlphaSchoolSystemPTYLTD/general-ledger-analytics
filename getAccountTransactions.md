@@ -60,10 +60,11 @@
                   "acct_desc":"ANZ Bank"
               }
           ],
+          "__tassversion": "01.053.3.000",
           "token":{
               "year":2018,
               "period":7,
-              "timestamp":"{ts '2020-03-02 11:20:15'}",
+              "timestamp":"{ts '2021-01-22 11:20:15'}",
               "acct_code":"00-6120-00-00"
           }
       }

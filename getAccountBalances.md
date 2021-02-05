@@ -38,10 +38,11 @@
 
     ```javascript
       {
+          "__tassversion": "01.053.3.000",
           "token":{
               "year":2019,
               "period":7,
-              "timestamp":"{ts '2020-03-02 15:36:25'}"
+              "timestamp":"{ts '2021-01-22 15:36:25'}"
           },
           "account_balances":[
               {
