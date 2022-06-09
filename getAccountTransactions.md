@@ -6,6 +6,8 @@
 
   TASS v52.5 - Method Added
 
+  TASS v57.5 -  Make `year`, `period` and `acct_code` parameters to optional
+
 * **Version:**
 
   3
@@ -22,17 +24,22 @@
 
    **Required:**
 
-   `year [string]` -  Year Number
+   none
    
    **Optional:**
 
-   none
+   `year [string]` -  Year Number
+
+   `period [string]` -  Period Nuumber
+
+   `acct_code [string]` -  Account Code
+
+   Note: This endpoint has the potential to retrieve very high volumes of data that may impact performance.  It is strongly suggested to make use of optional parameters to limit the result set.
 
    **Conditional:**
 
-   `period [string]` -  Period Nuumber, must be supplied if acct_code is not.
+   none
 
-   `acct_code [string]` -  Account Code, must be supplied if period is not.
 
 * **Success Response:**
 
@@ -72,19 +79,7 @@
 
 * **Error Response:**
 
-    `year` not supplied
-    ```javascript
-    __invalid: {
-      "year": "field is required"
-    }
-    ```
 
-    `period` and `acct_code` not supplied
-    ```javascript
-    __invalid: {
-      "condition": "period or acct_code must be specified."
-    }
-    ```
     
 * **Sample Parameters:**
 
