@@ -6,6 +6,8 @@
 
   TASS v52.5 - Method Added
 
+  TASS v57.5 -  Make `year` and `period` parameters to optional
+
 * **Version:**
 
   3
@@ -22,13 +24,15 @@
 
    **Required:**
 
-   `year [string]` - Year Number.
-
-   `period [string]` - Period Number.
+   none
    
    **Optional:**
 
-   none
+   `year [string]` - Year Number
+
+   `period [string]` - Period Number
+
+   Note: This endpoint has the potential to retrieve very high volumes of data that may impact performance.  It is strongly suggested to make use of optional parameters to limit the result set.
 
    **Conditional:**
  
@@ -78,19 +82,7 @@
 
 * **Error Response:**
 
-    `year` not supplied
-    ```javascript
-    __invalid: {
-      "year": "field is required"
-    }
-    ```
 
-    `period` not supplied
-    ```javascript
-    __invalid: {
-      "period": "field is required"
-    }
-    ```
     
 * **Sample Parameters:**
 
